@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
-  googleId: String,
-  credits: { type: Number, default: 0 }
+  pgpPublicKey: { type: String, default: '' },
+  message: { type: String, default: '' }
 });
 
 mongoose.model('users', userSchema);
