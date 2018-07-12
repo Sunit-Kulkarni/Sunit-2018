@@ -1,4 +1,6 @@
 var express = require('express');
+var mongoose = require('mongoose');
+var openpgp = require('openpgp');
 var app = express();
 
 app.get('/', (req, res) => {
