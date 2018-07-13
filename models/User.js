@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const userSchema = new Schema({
+//User Schema
+const userSchema = mongoose.Schema({
   pgpPublicKey: { type: String, default: '' },
-  message: { type: String, default: '' }
+  signedMessage: { type: String, default: '' },
+  securedPassword: { type: String, default: '' }
 });
 
-mongoose.model('users', userSchema);
+//Define and Export
+module.exports = mongoose.model('user', userSchema);

@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Sunit-Kulkarni/Sunit-2018#readme",
   "dependencies": {
+    "commander": "^2.16.0",
+    "inquirer": "^6.0.0",
     "mongoose": "^5.2.3",
     "openpgp": "^3.0.12"
   }
